@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <script>
+//If-else statement
+
+        // var a=prompt("Enter a number")
+        // if(a<0){
+        //     document.write("Please enter positive number")
+        // }
+        // else{
+        //     document.write("Your number :"+a)
+        // }
+
+
+        // var balance=10000
+        // var amount=prompt("Enter your amount")
+        // if(amount<balance)
+        // {
+        //     document.write("Before deduction balance : "+balance)
+        //     balance=balance-amount
+        //     alert("succesfully amount deducted : " +amount)
+        //     document.write("<br>")
+        //     document.write("After deduction balance : "+balance)
+        //     document.write("<br>")
+        //     document.write("Your Current Balance : "+balance)
+        // }
+        // else{
+        //     document.write("Your Current Balance : "+balance)
+        // }
+
+//If else If else
+
+
+        // var marks=prompt("Enter marks")
+        // var grade
+        // if(marks>=90)
+        // {
+        //    grade= "A"
+        // }
+        // else if(marks>=80)
+        // {
+        //     grade = "B"
+        // }
+        // else if(marks>=70)
+        // {
+        //     grade="C"
+        // }
+        // else if(marks>=60)
+        // {
+        //     grade="D"
+        // }
+        // else{
+        //     grade ="F"
+        // }
+        // document.write("yours marks :"+ marks+" "+"your grade : "+grade)
+
+    
+
+// Switch statement
+
+        var num1= +prompt("Enter first number : ")
+        var num2= +prompt("Enter second number : ")
+        var op= prompt("Enter which operation to do (+,-,*,/)")
+        switch(op)
+        {
+            case '+':
+                document.write("Addition of two numbers : "+(num1+num2))
+                break;
+            case '-':
+                document.write("substraction of two numbers : "+(num1-num2))
+                break;
+            case '*':
+                document.write("multiplication of two numbers : "+(num1*num2))
+                break;
+            case '/':
+                document.write("division of two numbers : "+(num1/num2))
+                break;
+            default:
+                document.write("Enter valid expression")
+        }
+
+    </script>
+</body>
+</html>

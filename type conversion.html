@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type conversion</title>
+</head>
+<body>
+    
+<script>                                              //Implicit type conversion
+    document.write(12+"4")     // 124
+    document.write("<br>")
+    document.write(12-"4")     //  8
+    document.write("<br>")
+    document.write(12+"a")     // NaN  (not a number)
+    document.write("<br>")
+    document.write(12+true)    // true -1  false-0    13
+    document.write("<br>")
+    document.write(5*"a")
+
+    document.write("<br>")
+// converting string to number                              // Explicit Type conversion
+    var x="umesh"
+    document.write(x +" : "+ typeof(x))
+    document.write("<br>")
+    
+    var y = Number(x)
+    document.write(typeof(y))
+    document.write("<br>")
+
+// ParseInt
+
+    document.write(parseInt("34nj"))
+    document.write("<br>")
+    document.write(parseFloat("34.09nj"))
+
+    document.write("<br>")
+//converting number to string
+
+var x=10
+document.write(typeof(x))
+x = String(x)
+document.write("<br>")
+document.write(typeof(x))
+document.write("<br>")
+// x = String(true)                                 // "true"     "undefined"
+// document.write("<br>")
+// document.write(x)
+
+
+// Converting number to Boolean
+var a=Boolean(10)                                     // 0,null,emptystring (false)   1,-1,12.03 (true)
+document.write(a)
+
+document.write("<br>")
+var a=Boolean(null)
+document.write(a)
+
+</script>
+
+
+</body>
+</html>
+
+<!--1.Implicit conversion
+2.Explicit conversion(numbers,strings,booleans)
+
+-->
