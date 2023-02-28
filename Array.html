@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        var lett=['abc','xyz','pqr']
+        console.log(lett)
+
+        var num=new Array('one','two','three')
+        console.log(num)
+
+// For empty array
+        var arr=[]
+        console.log(arr)
+
+// to access a string we need to use index position
+
+        console.log(lett[1])
+        console.log(num[2])
+
+// To add a element in array
+
+       num[3]='four'
+      console.log(num)
+
+// Heterogeneous data(we can store any type of datatypes)
+     var axx=['hello','world',29]
+     console.log(axx)
+*/
+
+//Methods in Array 
+// 1. Push method : this method will add new record in last
+
+ var num=['one','two']
+num.push('three')
+console.log(num)
+
+// 2. Pop method: this method will delete last entered record
+
+var del = num.pop()
+console.log(del)
+console.log(num)
+
+// 3. Unshift method : this method will add a record in beginning
+
+var axx=['one','two','abc','xyz']
+axx.unshift('three')
+console.log(axx)
+
+// shift(), indexOf(),slice()
+
+console.log("index of one : "+num.indexOf('one'))
+console.log("Slice : "+ axx.slice(1,3))
+
+// sort()
+
+var numb=[9,2,4,3,5]                                        //ascending order
+console.log("sorting the elements : "+ numb.sort())
+
+console.log("sorting the elements in reverse: "+ numb.sort().reverse())             //descending order
+    </script>
+</body>
+</html>
