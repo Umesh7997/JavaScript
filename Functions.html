@@ -24,7 +24,53 @@
         }
         console.log("anonymous function : "+sum(28,9))
         document.write("<br> anonymous function : "+sum(44,20))
+       
+// 3. Immediately Invoked Function Expression  : when we want to execute a function immediately where it is created.
+// we need to write our function in paranthesis brackets ()
+
+var sum = (function (num1,num2){
+            var result = num1+num2
+            return result
+        })(9,12);
+        document.write("<br>IIFE : "+sum)
+
+// 4.Arrow functions
+
+products = (num1,num2)=>{
+            var result = num1*num2
+            return result
+        }
+        document.write("<br> Arrow functions: "+3,9)
+
+        products = (num1,num2)=>{
+            var result = num1*num2
+            document.write("<br> arrow functions directly : " +result)
+        }
+        products(4,5)
+
+// If only one statement in function body
+    products = (num1,num2) => num1*num2
+    document.write("<br> only one statement :"+products(3,3))
         
+// If only one parameter
+products = (num1) => num1*num1*num1
+    document.write("<br> only one parameter :"+products(9))
+
+// If no arguments 
+ greet=()=>document.write("<br>"+"good afternoon")
+ greet()
+
+ // if we have two or more statements we need to use curly brackets {}
+ greet=()=>{
+    document.write("<br>"+"good afternoon")
+    document.write("<br>"+"hello")
+    return 6+7
+ }
+ var res=greet()
+ document.write("<br>"+res)
+
+
+
     </script>
 </body>
 </html>
