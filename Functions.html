@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+    <script>
+
+// 1.Named functions
+        function sum(num1,num2){
+            var result = num1+num2
+            return result
+        }
+        console.log(sum(3,9))
+        document.write(sum(10,20))
+
+// 2.Anonymous functions
+           var sum= function (num1,num2){
+            var result = num1+num2
+            return result
+        }
+        console.log("anonymous function : "+sum(28,9))
+        document.write("<br> anonymous function : "+sum(44,20))
+        
+    </script>
+</body>
+</html>
