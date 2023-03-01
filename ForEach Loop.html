@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach Loop & Set </title>
+</head>
+<body>
+    <script>
+
+// With arrow function 
+        var salaries=[40000,50000,60000]
+        document.write("Before increment : "+salaries)
+        salaries.forEach((salary,index)=>{
+        let increment = salary/10
+        salaries[index]=salary+increment
+        })
+        document.write("<br> After 10% increment : "+salaries)
+document.write("<br> --------------")
+
+// With anonymous function
+
+        var salaries=[100,200,300]
+        document.write("<br> Before increment : "+salaries)
+        salaries.forEach(increment)
+           function increment  (salary,index){
+        let increment = salary/10
+        salaries[index]=salary+increment
+           }
+           document.write("<br> After 10% increment : "+salaries)
+
+           document.write("<br> --------Set() in JS------<br>")
+// Set in JS
+
+a1=[30,40,20,40,80,20,10]
+console.log(a1)
+
+
+let s1=new Set(a1)
+console.log(s1)
+
+x="khammam"
+let y=new Set(x)
+console.log(y)
+
+
+let k= new Set()
+k.add(10)
+console.log(k)
+k.add(20)                            // we can add an element in set
+k.delete(20)                         // we can delete an element in set
+console.log(k.size)                  // we can see the size of a set
+k.clear()
+console.log(k)                       // its deletes all the elements from the set
+
+
+
+
+
+let m="hyderabad"
+
+let m2=new Set(m)
+m2.forEach(function(ele,index)
+{
+   console.log(ele)
+   console.log(index)
+})
+
+// to overcome this we used entires method
+console.log(m2.entries())
+
+
+
+
+    </script>
+</body>
+</html>
