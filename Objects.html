@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in Js</title>
+</head>
+<body>
+    <script>
+//1. Object Literal
+
+        let Employee = {name:"umesh",age: 22,role:"developer"}
+        console.log(Employee)
+        console.log(Employee.name)
+        console.log(Employee["role"])        // if we dont give quotes then it is read as variable
+
+        // To add a new key:value pair 
+        Employee.salary="30000"
+        console.log(Employee)
+
+        // To modify or update a value
+        Employee["salary"]=20000
+        console.log(Employee)
+
+// 2. Using a new keyword with object constructor
+
+                let emp=new Object()          // Empty object
+                console.log(emp)
+                emp.name="Naresh"             // adding a key:value pair yo that object
+                console.log(emp)
+
+
+//3. Using new operator with constructor function
+        // Create Constructor Function
+                function user(n,a,p){
+                    this.name=n;
+                    this.age=a;
+                    this.place=p;
+                }
+        // create object with constructor function call
+        let user1= new user("mohan",23,"khammam")
+        console.log(user1)
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console methods in JS</title>
+</head>
+<body>
+    <script>
+        let stu="console method"
+        console.log("Log"+" "+stu)    //only in development developers use this method to display for message
+        console.info("info"+" "+stu)  // same as log method...this shows information
+        console.warn("warning"+" "+stu)  // it shows warning for user
+        console.error("error"+" "+stu)   // it shows error message to user(if a task is incorrect then it displays)
+        // array table
+        console.table(['abc','def','ghi']) // to display array or object in table format then we use this method
+        // object table
+        console.table({name:"umesh",age:23,place:"khammam"})
+        //console.clear()   // it clears all data in console tab
+        console.assert(10>15,"condition failed")   // if condition is failed then we need to display am message
+        
+        
+        
+       /* console.count("called")  //to check operation count then we use it
+        let x=+prompt("Enter a number")
+        while(x!=10){
+            console.log("sucessfully entered a number:"+x)
+            x=+prompt("enter a number")
+            console.count("while loop called :")
+        }
+         */
+
+        // console.countReset()   // it reset the count value to 0
+
+        /*console.time()       if we want to check time for a task..we need to give this method in beginning
+        console.timeEnd()      we need to give this method after the function    
+        console.timeLog()      duration b/w time() to timeLog()        */
+        
+        
+        // console.log messages will be in one group
+        // it divide into section wise
+        console.group("group 1")
+        console.log("group1 log1")
+        console.log("group1 log2")
+        console.log("group1 log3")
+        console.groupEnd()
+
+        // console.log messages will in one group
+        console.group("group 2")
+        console.log("group2 log1")
+        console.log("group2 log2")
+        console.log("group2 log3")
+        console.groupEnd()
+    </script>
+</body>
+</html>
